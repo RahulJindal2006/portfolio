@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.56d096ac.css",
+    "main.js": "/portfolio/static/js/main.ae6fd798.js",
+    "static/js/453.68693753.chunk.js": "/portfolio/static/js/453.68693753.chunk.js",
+    "static/media/MainSpeech.mp4": "/portfolio/static/media/MainSpeech.0cb09699ce19266e730a.mp4",
+    "static/media/Introduction.TS.mp4": "/portfolio/static/media/Introduction.TS.caa01c9f7fc382807e98.mp4",
+    "static/media/Sudoku.jpeg": "/portfolio/static/media/Sudoku.b28aec6781e5c3ee921b.jpeg",
+    "static/media/Codingimage.jpg": "/portfolio/static/media/Codingimage.cc6e1f89018035066ed4.jpg",
+    "static/media/MicrosoftAzureCert.jpeg": "/portfolio/static/media/MicrosoftAzureCert.13922efad10e04150042.jpeg",
+    "static/media/FormalPicture.jpg": "/portfolio/static/media/FormalPicture.b8e4f491da3fec4d63af.jpg",
+    "static/media/CodingLogo.png": "/portfolio/static/media/CodingLogo.501a7e8081efd0d9f90f.png",
+    "static/media/ConnectFour.jpeg": "/portfolio/static/media/ConnectFour.7e0de02dd1e7bd35b535.jpeg",
+    "static/media/Weather.jpg": "/portfolio/static/media/Weather.3830cfa6cf0ef94a696e.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.56d096ac.css.map": "/portfolio/static/css/main.56d096ac.css.map",
+    "main.ae6fd798.js.map": "/portfolio/static/js/main.ae6fd798.js.map",
+    "453.68693753.chunk.js.map": "/portfolio/static/js/453.68693753.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.56d096ac.css",
+    "static/js/main.ae6fd798.js"
+  ]
+}
