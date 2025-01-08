@@ -1,0 +1,105 @@
+.about {
+  display: grid;
+  grid-template-rows: 1fr 1fr; /* Two rows of equal height */
+  grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+  gap: 0; /* No gaps between grid items */
+  position: relative; /* Position relative for the lines */
+  min-height: calc(100vh - 100px - 200px); /* Full height minus navbar (100px) and footer (200px) */
+  margin: 0; /* Remove margin to align with navbar and footer */
+  box-sizing: border-box; /* Include padding and borders in sizing */
+}
+
+.about::before,
+.about::after {
+  content: '';
+  position: absolute;
+  background-color: #121619; /* Line color */
+  z-index: 1; /* Place lines above the grid background */
+}
+
+/* Vertical Line */
+.about::before {
+  width: 2px; /* Line thickness */
+  height: 100%; /* Full height of the grid */
+  left: 50%; /* Center the vertical line */
+  top: 0;
+}
+
+/* Horizontal Line */
+.about::after {
+  width: 100%; /* Full width of the grid */
+  height: 2px; /* Line thickness */
+  top: 50%; /* Center the horizontal line */
+  left: 0;
+}
+
+.topLeft,
+.topRight,
+.bottomLeft,
+.bottomRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none; /* No additional borders */
+  padding: 0; /* Remove padding for edge-to-edge content */
+  width: 100%; /* Full width within the grid cell */
+  height: 100%; /* Fill the height of the grid cell */
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.topLeft {
+  flex: 1; /* Equal width for both sections */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align image to the top */
+  overflow: hidden; /* Prevent content overflow */
+  margin: 0; /* Ensure no margin around the section */
+  padding: 0; /* Ensure no padding around the section */
+}
+
+.topLeft img {
+  width: 100%; /* Full width */
+  height: 100%; /* Match height of container */
+  object-fit: cover; /* Maintain aspect ratio and crop to fit */
+  margin: 0; /* Remove any margin around the image */
+  padding: 0; /* Remove any padding around the image */
+}
+
+
+
+/* Fill the bottom sections with the videos */
+.bottomLeft .video,
+.bottomRight .video {
+  width: 100%;
+  height: 100%; /* Fill the section entirely */
+  object-fit: cover; /* Crop and fill while maintaining aspect ratio */
+}
+
+.topRight {
+  display: flex;
+  flex-direction: column; /* Stack heading and text vertically */
+  text-align: justify; /* Align text for clean appearance */
+  justify-content: flex-start; /* Align content to the top */
+  padding: 10px; /* Add padding for spacing */
+  color: #333; /* Text color */
+  overflow-y: auto; /* Add vertical scrolling if necessary */
+  height: 100%; /* Ensure it takes up the full height of its grid cell */
+  box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+}
+
+.topRight h1 {
+  margin-bottom: 10px; /* Reduce space between heading and text */
+  font-size: 1.4rem; /* Slightly smaller font size for better fit */
+  color: #121619; /* Heading color */
+  text-align: center; /* Center-align the heading */
+}
+
+.topRight p {
+  font-size: 0.85rem; /* Adjust font size for better fit */
+  line-height: 1.5; /* Maintain readability */
+  margin: 0; /* Remove extra margins */
+  word-wrap: break-word; /* Break long words to prevent overflow */
+  width: 100%; /* Ensure the paragraph fits the container */
+  overflow-wrap: anywhere; /* Break overflowing text at any point */
+  padding-right: 5px; /* Add slight padding to the right to prevent cutting off */
+}
